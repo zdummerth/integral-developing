@@ -1,0 +1,36 @@
+{
+  "id": "color_stop",
+  "type": "SharedSlice",
+  "name": "ColorStop",
+  "description": "ColorStop",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme_color": {
+          "type": "Select",
+          "config": {
+            "label": "theme_color",
+            "placeholder": "",
+            "options": ["primary", "secondary", "tertiary", "transparent"],
+            "default_value": "primary"
+          }
+        },
+        "custom_color": {
+          "type": "Color",
+          "config": { "label": "custom_color", "placeholder": "" }
+        },
+        "percentage": {
+          "type": "Number",
+          "config": { "label": "percentage", "placeholder": "" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

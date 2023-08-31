@@ -1,0 +1,23 @@
+{
+  "id": "navigation",
+  "label": "navigation",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "name": {
+        "type": "Text",
+        "config": { "label": "name", "placeholder": "" }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": { "navigation_item": { "type": "SharedSlice" } }
+        }
+      }
+    }
+  }
+}

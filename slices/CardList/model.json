@@ -1,0 +1,90 @@
+{
+  "id": "card_list",
+  "type": "SharedSlice",
+  "name": "CardList",
+  "description": "CardList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "section_heading": {
+          "type": "Text",
+          "config": { "label": "section_heading", "placeholder": "" }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background_color",
+            "placeholder": "",
+            "options": ["transparent", "primary", "secondary", "tertiary"],
+            "default_value": "transparent"
+          }
+        },
+        "custom_background_color": {
+          "type": "Color",
+          "config": { "label": "custom_background_color", "placeholder": "" }
+        },
+        "gradient": {
+          "type": "Link",
+          "config": {
+            "label": "gradient",
+            "select": "document",
+            "customtypes": ["gradient"]
+          }
+        }
+      },
+      "items": {
+        "card_image": {
+          "type": "Image",
+          "config": {
+            "label": "card_image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "card_title": {
+          "type": "Text",
+          "config": { "label": "card_title", "placeholder": "" }
+        },
+        "card_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "card_text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "primary_button_link": {
+          "type": "Link",
+          "config": {
+            "label": "primary_button_link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "primary_button_label": {
+          "type": "Text",
+          "config": { "label": "primary_button_label", "placeholder": "" }
+        },
+        "secondary_button_link": {
+          "type": "Link",
+          "config": {
+            "label": "secondary_button_link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "secondary_button_label": {
+          "type": "Text",
+          "config": { "label": "secondary_button_label", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}

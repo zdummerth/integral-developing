@@ -1,0 +1,89 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "ContactForm",
+  "description": "ContactForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background_color",
+            "placeholder": "",
+            "options": ["transparent", "primary", "secondary", "tertiary"],
+            "default_value": "transparent"
+          }
+        },
+        "custom_text_color": {
+          "type": "Color",
+          "config": { "label": "custom_text_color", "placeholder": "" }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "success_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "success_message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "error_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "error_message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "custom_background_color": {
+          "type": "Color",
+          "config": { "label": "custom_background_color", "placeholder": "" }
+        },
+        "use_gradient": {
+          "type": "Boolean",
+          "config": {
+            "label": "use_gradient",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "gradient_type": {
+          "type": "Select",
+          "config": {
+            "label": "gradient_type",
+            "placeholder": "",
+            "options": ["light", "dark"],
+            "default_value": "light"
+          }
+        },
+        "gradient": {
+          "type": "Link",
+          "config": {
+            "label": "gradient",
+            "select": "document",
+            "customtypes": ["gradient"]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

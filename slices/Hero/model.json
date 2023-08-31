@@ -1,0 +1,96 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": { "label": "image", "constraint": {}, "thumbnails": [] }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background_color",
+            "placeholder": "",
+            "options": ["transparent", "primary"],
+            "default_value": "transparent"
+          }
+        },
+        "custom_background_color": {
+          "type": "Color",
+          "config": { "label": "custom_background_color", "placeholder": "" }
+        },
+        "text_color": {
+          "type": "Select",
+          "config": {
+            "label": "text_color",
+            "placeholder": "",
+            "options": ["white", "black", "primary"],
+            "default_value": "white"
+          }
+        },
+        "custom_text_color": {
+          "type": "Color",
+          "config": { "label": "custom_text_color", "placeholder": "" }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "background_image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "mobile_background_image": {
+          "type": "Image",
+          "config": {
+            "label": "mobile_background_image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_first": {
+          "type": "Boolean",
+          "config": {
+            "label": "image_first",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "button_link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": { "label": "button_label", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}

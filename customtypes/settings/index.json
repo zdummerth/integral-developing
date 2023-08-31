@@ -1,0 +1,63 @@
+{
+  "id": "settings",
+  "label": "settings",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "primary_color": {
+        "type": "Color",
+        "config": { "label": "primary_color", "placeholder": "" }
+      },
+      "secondary_color": {
+        "type": "Color",
+        "config": { "label": "secondary_color", "placeholder": "" }
+      },
+      "tertiary_color": {
+        "type": "Color",
+        "config": { "label": "tertiary_color", "placeholder": "" }
+      },
+      "facebook_link": {
+        "type": "Link",
+        "config": {
+          "label": "facebook_link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "facebook_icon_dark": {
+        "type": "Image",
+        "config": {
+          "label": "facebook_icon_dark",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "facebook_icon_light": {
+        "type": "Image",
+        "config": {
+          "label": "facebook_icon_light",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "instagram_icon_dark": {
+        "type": "Image",
+        "config": {
+          "label": "instagram_icon_dark",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "instagram_link": {
+        "type": "Link",
+        "config": {
+          "label": "instagram_link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}

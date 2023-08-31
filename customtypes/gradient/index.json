@@ -1,0 +1,30 @@
+{
+  "id": "gradient",
+  "label": "gradient",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "type": {
+        "type": "Select",
+        "config": {
+          "label": "type",
+          "placeholder": "",
+          "options": ["linear", "radial"],
+          "default_value": "linear"
+        }
+      },
+      "angle": {
+        "type": "Number",
+        "config": { "label": "angle", "placeholder": "" }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "color_stop": { "type": "SharedSlice" } } }
+      }
+    }
+  }
+}

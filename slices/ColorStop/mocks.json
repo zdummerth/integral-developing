@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"theme_color": {
+				"__TYPE__": "FieldContent",
+				"value": "primary",
+				"type": "Select"
+			},
+			"custom_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#2b0b96",
+				"type": "Color"
+			},
+			"percentage": {
+				"__TYPE__": "FieldContent",
+				"value": "14",
+				"type": "Number"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
