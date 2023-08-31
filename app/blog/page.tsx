@@ -18,14 +18,17 @@ export default async function Page() {
   // console.log(posts);
 
   return (
-    <div className="p-2 bg-gradient-to-t from-zinc-500 to-black min-h-screen text-white">
+    <div className="p-2 bg-gradient-to-t from-zinc-800 to-black min-h-screen text-white">
       <h1 className=" text-2xl text-transparent bg-clip-text bg-gradient-to-br from-white via-[#56c8f2] to-white">
         Integral Developing Blog
       </h1>
       <ul className="p-4 flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => {
           return (
-            <li key={post.id} className="relative">
+            <li
+              key={post.id}
+              className="relative border border-white rounded-md overflow-hidden shadow shadow-white"
+            >
               <PrismicNextLink document={post}>
                 <PrismicNextImage
                   field={post.data.image}
@@ -33,7 +36,7 @@ export default async function Page() {
                   priority={true}
                   className="object-cover block"
                 />
-                <h3>{post.data.title}</h3>
+                <h3 className="text-xl p-2 font-semibold">{post.data.title}</h3>
               </PrismicNextLink>
             </li>
           );
