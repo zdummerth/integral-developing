@@ -48,10 +48,6 @@ const ContactForm = ({
     transparent: "transparent",
   };
 
-  const backgroundColor = slice.primary.custom_background_color
-    ? slice.primary.custom_background_color.toString()
-    : bgColors[slice.primary.background_color]?.toString();
-
   const {
     register,
     handleSubmit,
