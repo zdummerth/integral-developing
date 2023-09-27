@@ -1,15 +1,13 @@
 "use client";
 
-import { PrismicLink, PrismicText } from "@prismicio/react";
-import { PrismicNextLink } from "@prismicio/next";
+import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
 import { useState, useRef, useEffect } from "react";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import useOnClickOutside from "@/utils/useOnClickOutside";
 import HamburgerToX from "./HamburgerToX";
 
-export function Navigation({ navigation }: any) {
+export function Navigation({ navigation, logo }: any) {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   const pathname = usePathname();
   const linkClassName =
     "px-3 py-3 md:py-1 border-t last:border-b md:border-none flex justify-start";
@@ -17,6 +15,7 @@ export function Navigation({ navigation }: any) {
   const mobileRef = useRef<HTMLInputElement>(null);
   useOnClickOutside(mobileRef, () => setIsOpen(false));
 
+  // Close menu when you go to a new page
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
@@ -53,7 +52,7 @@ export function Navigation({ navigation }: any) {
           <div className="flex justify-between align-center flex-row h-full">
             <div className="flex items-center pl-4">
               <a className={``} href="/" aria-label="Logo">
-                <div>logo</div>
+                <PrismicNextImage field={logo} width={72} height={72} />
               </a>
             </div>
             <button

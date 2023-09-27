@@ -21,11 +21,12 @@ export default async function RootLayout({
 }) {
   const client = createClient();
   const nav = await client.getSingle("navigation");
+  const settings = await client.getSingle("settings");
 
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Navigation navigation={nav} />
+        <Navigation navigation={nav} logo={settings.data.logo} />
         <main className="flex flex-col items-center mx-auto min-h-screen">
           {children}
         </main>

@@ -17,9 +17,7 @@ export default async function Page({ params }: { params: Params }) {
   const settings = await client.getSingle("settings");
 
   return (
-    <div className="">
-      <div className="bg-gradient-to-t from-zinc-500 to-black w-screen"></div>
-
+    <div className="bg-gradient-to-t from-zinc-400 to-zinc-900">
       <SliceZone
         slices={page.data.slices}
         components={components}

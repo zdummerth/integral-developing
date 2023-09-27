@@ -24,14 +24,7 @@
 
   .dark-gradient {
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-      142deg,
-      #000 0%,
-      #303030 35%,
-      #050505 65%,
-      #303030 85%,
-      #000 100%
-    );
+    background: linear-gradient(180deg, #000, #121212);
   }
 }
 
