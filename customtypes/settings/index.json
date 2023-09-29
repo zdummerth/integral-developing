@@ -61,6 +61,14 @@
       "logo": {
         "type": "Image",
         "config": { "label": "logo", "constraint": {}, "thumbnails": [] }
+      },
+      "instagram_icon_light": {
+        "type": "Image",
+        "config": {
+          "label": "instagram_icon_light",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }

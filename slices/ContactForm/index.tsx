@@ -41,13 +41,6 @@ const ContactForm = ({
   slice: Content.ContactFormSlice;
   context: Content.SettingsDocumentData;
 }): JSX.Element => {
-  const bgColors = {
-    primary: context.primary_color?.toString(),
-    secondary: context.secondary_color?.toString(),
-    tertiary: context.tertiary_color?.toString(),
-    transparent: "transparent",
-  };
-
   const {
     register,
     handleSubmit,
@@ -79,9 +72,9 @@ const ContactForm = ({
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="w-full px-6 py-12 md:px-20 md:flex md:gap-6 lg:gap-16 justify-evenly bg-gradient-to-br from-sky-400 to-sky-800"
+      className="w-full px-6 py-12 md:px-20 md:flex md:gap-6 lg:gap-16 justify-evenly text-white bg-gradient-to-br from-black to-zinc-900"
     >
-      <div className="md:w-1/2">
+      <div className="flex flex-col justify-center items-center text-center md:w-1/2">
         <PrismicRichText
           field={slice.primary.heading}
           components={{
@@ -103,14 +96,14 @@ const ContactForm = ({
         <div className="flex gap-4 my-6">
           <PrismicNextLink field={context.facebook_link}>
             <PrismicNextImage
-              field={context.facebook_icon_dark}
+              field={context.facebook_icon_light}
               height={50}
               width={50}
             />
           </PrismicNextLink>
           <PrismicNextLink field={context.instagram_link}>
             <PrismicNextImage
-              field={context.instagram_icon_dark}
+              field={context.instagram_icon_light}
               height={50}
               width={50}
             />
@@ -165,7 +158,7 @@ const ContactForm = ({
           {...register("message", { required: false })}
         />
 
-        <button className="block bg-white py-1 px-2 my-2 rounded text-black w-full">
+        <button className="block bg-gradient-to-br from-white via-[#56c8f2] to-white py-1 px-2 my-2 rounded text-black w-full">
           {isSubmitting ? "Sending..." : "Submit"}
         </button>
       </form>
