@@ -19,7 +19,7 @@ export type ContactFormProps = SliceComponentProps<Content.ContactFormSlice>;
 
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const errorClassname = "text-red-500 font-semibold";
-const inputClassname = "p-1 rounded w-full border border-sky-500";
+const inputClassname = "p-1 rounded w-full border border-sky-500 text-black";
 const labelClassname = "block mb-1 mt-3";
 
 const ToastMsg = ({ name }: { name?: string }) => {
