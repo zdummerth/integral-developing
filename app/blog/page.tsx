@@ -27,14 +27,14 @@ export default async function Page() {
           return (
             <li
               key={post.id}
-              className="relative border border-white rounded-md overflow-hidden shadow shadow-white"
+              className="relative border border-white rounded-md overflow-hidden shadow-xs shadow-white"
             >
               <PrismicNextLink document={post}>
                 <PrismicNextImage
                   field={post.data.image}
                   sizes="100vw, (min-width: 768px) 50vw, 33vw"
                   priority={true}
-                  className="object-cover block"
+                  className="object-cover block aspect-video"
                 />
                 <h3 className="text-xl p-2 font-semibold">{post.data.title}</h3>
               </PrismicNextLink>
